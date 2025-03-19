@@ -20,6 +20,10 @@ app.post('/registration', (req, res) => {
   res.json({message:"User created Successfully", username, email, password, dateofbirth})
 });
 
+  app.get('/',(req,res)=>{
+    res.json({message: "Successfully completed"})
+  })
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
